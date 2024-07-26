@@ -1,0 +1,339 @@
+/*HEADER*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    background-color: white;
+    padding: 10px 25px;
+    color: black;
+}
+.logo{
+    width: 110px;
+    height: 45px;
+    overflow: hidden;
+}
+.logo-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position:top;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+/*header nav ul li {
+    margin: 0;
+}*/
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+header .profile{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+header .profile a {
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.profile a:hover {
+    background-color: white;
+    padding: 5px;
+}
+
+.image-button {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+.image-button img {
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+    margin-left: 3px;
+    border: none;
+}
+.image-button img:hover {
+    background-color: white;
+    padding: 5px;
+}
+
+/*HEADER SEARCH AREA*/
+.search{
+    flex-wrap: wrap;
+    display:flex;
+    border: 1px solid grey;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/*SEARCH BOXES*/
+.search-bar label {
+    font-size: 14px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 7px;   
+}
+
+.search-bar input, .search-bar button {
+    padding: 5px;
+    font-size: 12px;
+    border: none;
+    border-right: 1px solid #a3a2a2;
+    margin-left: 5px;   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: text;
+    transition: all 0.3s ease;
+}
+.search-bar input:hover {
+    background-color: white;
+    padding: 10px;
+    color: white;
+}
+.search-bar button:hover img {
+    margin: 7px;
+    background-color: #FF5A5F;
+}
+
+/*SEARCH ICON*/
+.search-bar button {
+    background-color: #FF5A5F;
+    color: white;
+    border: none;
+    border-color: black;
+    border-radius: 55%;
+    transition: all 0.3s ease;
+}
+
+.search-bar button img {
+    width: 25px; 
+    padding: 5px;
+    height:20px;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    object-fit:fill;
+    transition: all 0.3s ease;
+}
+
+
+
+/*HR AREA*/
+hr{
+    margin:15px;
+}
+
+/*ICON AREA*/
+.icon-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+    cursor:pointer;
+}
+
+.icon-item {
+    text-align: center;
+    font-size: small;
+}
+
+.icon-img {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+.icon-img:hover {
+    background-color: white;
+    padding: 5px;
+}
+
+/*FLEX AREA*/
+.listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    cursor:pointer;
+}
+
+.listing {
+    overflow: hidden;
+    width: 270px;
+    margin: 0 auto;
+}
+
+.img-container {
+    position: relative;
+    border: none;
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*MAKING THE DOWNLOAD ICON ABSOLUTE*/
+.download-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    color: inherit;
+}
+
+/*DETAILS AREA*/
+.info {
+    padding: 10px;
+    border: none;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+/*FOOTER SECTION*/
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-left p, .footer-left a, .footer-right a {
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(25, 46, 127);
+}
+.footer-left a {
+    margin-right: 15px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right img {
+    width: 30px;
+    height: 30px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.language img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-right :hover{
+    fill:rgb(23, 76, 145)
+}
+.box1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.head1{
+    width: 100%;
+    position: fixed;
+}
+.logo{
+    width: 100px;
+}
+.c1{
+    color: black;
+    font-size: 20px;
+}
+.globe{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+.card{
+    border: none;
+    padding: 10px;
+    width: 320px;
+}
+.card-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
